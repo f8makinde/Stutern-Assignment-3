@@ -7,12 +7,53 @@
     <title>Recipe page</title>
 </head>
 <style>
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2em;
+        line-height: 1.5rem;
+        word-spacing: 4px;
+       }
+    table{
+        border: 1px solid black;
+        padding: .5em 2em;
+        background: rgb(249, 120, 6);
+        color: white;
+    }
+    th{
+        border: 1px solid white;
+        padding: .5em;
+    }
+
+    td{
+        border: 1px solid white;
+        padding: .2em;
+    }
     img{
         object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
-    body{
-        font-family: Arial, Helvetica, sans-serif;
+    .flex{
+        display: flex;
+        flex-direction: row;
     }
+    .first-pics, .second-pics, .third-pics, .fourth-pics{
+        background-color: rgb(242, 83, 10); 
+        padding: 1em;
+        margin: 0 1em;
+        border-radius: 4px;
+    }
+    @media only screen and (max-width: 1040px) {
+  .flex{
+        flex-direction: column;
+    }
+    .first-pics, .second-pics, .third-pics, .fourth-pics{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+}
 </style>
 <body>
     <div>
@@ -103,10 +144,21 @@
             Jollof rice images
         </h2>
         <div class="flex">
-            <img src="Jollof 1.jpg" alt="" width="200px" height="200px">
-            <img src="pexels-keesha's-kitchen-13915043.jpg" alt="" width="200px" height="200px">   
-            <img src="jollof_rice.webp" alt="" width="200px" height="200px">
+            <div class="first-pics">
+                <img src="Jollof 1.jpg" alt="" width="200px" height="200px">
+            </div>
+           <div class="second-pics">
+            <img src="pexels-keesha's-kitchen-13915043.jpg" alt="" width="200px" height="200px">
+           </div>
+             <div class="third-pics">
+                <img src="jollof_rice.webp" alt="" width="200px" height="200px">
+             </div>
+           <div class="fourth-pics">
             <img src="Jollof-rice-pu.jpeg" alt="" width="200px" height="200px">
+           </div>
+          <div>
+            <img src="Jollof-Rice-17.jpg" alt="">
+          </div>
         </div>
 
     </div>
